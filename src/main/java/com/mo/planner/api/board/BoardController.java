@@ -36,6 +36,11 @@ public class BoardController {
 
 	private final BoardService boardService;
 
+	@GetMapping("")
+	public String getDocker() {
+		return "Docker Test!";
+	}
+
 	@PostMapping("")
 	public ResponseEntity<?> saveBoard(@RequestBody BoardReq req) {
 
