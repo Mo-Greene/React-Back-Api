@@ -36,7 +36,7 @@ public class BoardController {
 
 	private final BoardService boardService;
 
-	@GetMapping("")
+	@GetMapping("/test")
 	public String getDocker() {
 		return "Docker Test!";
 	}
